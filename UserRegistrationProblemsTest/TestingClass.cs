@@ -114,6 +114,21 @@ namespace UserRegistrationProblemsTest
                 Console.WriteLine(pass + "-- > InValid");
             }
         }
+
+        //We are using this method to match pattern of One Numeric Password format
+        public static void OneNumeric(string pass)
+        {
+            string pwd = "^(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]{8,}$";  //Expression for Validating One Numeric Password format
+            Regex regex = new Regex(pwd);
+            if (regex.IsMatch(pass))
+            {
+                Console.WriteLine(pass + "-- > Valid");
+            }
+            else
+            {
+                Console.WriteLine(pass + "-- > InValid");
+            }
+        }
     }
 }
 
