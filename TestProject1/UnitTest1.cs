@@ -6,12 +6,30 @@ namespace TestProject1
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestFirstName()
         {
             //AAA Methodology
 
             //Arrange
             string message = "Rak";
+            string expected = "valid";
+
+            //Act
+            TestingClass testing = new TestingClass(message);
+            string actual = testing.validFirstName();
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+
+        }
+
+        [TestMethod]
+        public void TestLastName()
+        {
+            //AAA Methodology
+
+            //Arrange
+            string message = "Mus";
             string expected = "valid";
 
             //Act
