@@ -68,6 +68,23 @@ namespace UserRegistrationProblemsTest
             }
 
         }
+
+        //We are using this method to match pattern of mobile no
+        public static void mobileFormat(string number)
+        {
+            string Mobnumber = "^[0-9]{1,2}[ ]{1}[0-9]{10}$";  //Expression for Validating mobileFormating
+            Regex regex = new Regex(Mobnumber);
+
+            if (regex.IsMatch(number))
+            {
+                Console.WriteLine(number + "-- > Valid");
+            }
+            else
+            {
+                Console.WriteLine(number + "-- > InValid");
+            }
+
+        }
     }
 }
 

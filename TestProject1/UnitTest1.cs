@@ -59,5 +59,24 @@ namespace TestProject1
             Assert.AreEqual(expected, actual);
 
         }
+
+
+        [TestMethod]
+        public void TestMobileNo()
+        {
+            //AAA Methodology
+
+            //Arrange
+            string message = "91 8007078569";
+            string expected = "valid";
+
+            //Act
+            TestingClass testing = new TestingClass(message);
+            string actual = testing.validFirstName();
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+
+        }
     }
 }
