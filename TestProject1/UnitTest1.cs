@@ -78,5 +78,23 @@ namespace TestProject1
             Assert.AreEqual(expected, actual);
 
         }
+
+        [TestMethod]
+        public void TestPassword()
+        {
+            //AAA Methodology
+
+            //Arrange
+            string message = "rakeSH95@";
+            string expected = "valid";
+
+            //Act
+            TestingClass testing = new TestingClass(message);
+            string actual = testing.validFirstName();
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+
+        }
     }
 }

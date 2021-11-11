@@ -85,6 +85,21 @@ namespace UserRegistrationProblemsTest
             }
 
         }
+
+
+        //We are using this method to match pattern of password format
+        public static void passwordFormat(string pass)
+        {
+            string pwd = "^[a-zA-Z0-9]{8,}$";
+            Regex regex = new Regex(pwd);        //creating a regex named obj with regular pwd.
+            if (regex.IsMatch(pass))
+            {
+                Console.WriteLine(pass + "-- > Valid");
+            }
+            else
+                Console.WriteLine(pass + "-- > InValid");
+        }
     }
+}
 }
 
