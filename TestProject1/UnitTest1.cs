@@ -96,5 +96,23 @@ namespace TestProject1
             Assert.AreEqual(expected, actual);
 
         }
+
+        [TestMethod]
+        public void TestUpperCase()
+        {
+            //AAA Methodology
+
+            //Arrange
+            string message = "RakeSH95";
+            string expected = "valid";
+
+            //Act
+            TestingClass testing = new TestingClass(message);
+            string actual = testing.validFirstName();
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+
+        }
     }
 }

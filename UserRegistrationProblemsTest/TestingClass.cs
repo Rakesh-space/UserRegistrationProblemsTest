@@ -99,7 +99,23 @@ namespace UserRegistrationProblemsTest
             else
                 Console.WriteLine(pass + "-- > InValid");
         }
+
+        //We are using this method to match pattern of Upper Case Password format
+        public static void UpperCaseFormat(string pass)
+        {
+            string pwd = "^(?=.*[A-Z])[a-zA-Z0-9]{8,}$"; //creating a regex named obj with regular pwd.
+            Regex regex = new Regex(pwd);
+            if (regex.IsMatch(pass))
+            {
+                Console.WriteLine(pass + "-- > Valid");
+            }
+            else
+            {
+                Console.WriteLine(pass + "-- > InValid");
+            }
+        }
     }
 }
-}
+
+
 
