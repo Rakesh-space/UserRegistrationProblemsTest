@@ -49,5 +49,25 @@ namespace UserRegistrationProblemsTest
                 return "Invalid";
             }
         }
+
+        //This method for validation of email id
+        public string ValidEmail(string mail)
+        {
+            string emailid = "^[a-z]{3}[.][a-z0-9]*[@]{1}[bl]{2}[.]{1}[co]{2}[.]{1}[a-z]*$"; //Expression for gmail format
+            Regex regex = new Regex(emailid);
+
+            if (regex.IsMatch(mail))
+            {
+                //Console.WriteLine(mail + "-- > Valid");
+                return "Valid";
+            }
+            else
+            {
+                //Console.WriteLine(mail + "-- > InValid");
+                return "Invalid";
+            }
+
+        }
     }
 }
+
