@@ -1,4 +1,4 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using UserRegistrationProblemsTest;
 namespace TestProject1
 {
@@ -122,6 +122,24 @@ namespace TestProject1
 
             //Arrange
             string message = "R@95sM99";
+            string expected = "valid";
+
+            //Act
+            TestingClass testing = new TestingClass(message);
+            string actual = testing.validFirstName();
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+
+        }
+
+        [TestMethod]
+        public void TestSpecialCharcter()
+        {
+            //AAA Methodology
+
+            //Arrange
+            string message = "#r&K*9@oV5";
             string expected = "valid";
 
             //Act
