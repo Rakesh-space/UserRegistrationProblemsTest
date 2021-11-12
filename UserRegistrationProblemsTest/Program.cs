@@ -1,4 +1,5 @@
 ﻿using System;
+using TestProject1;
 
 namespace UserRegistrationProblemsTest
 {

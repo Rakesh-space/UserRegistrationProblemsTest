@@ -1,0 +1,16 @@
+C:\Users\Rakesh\source\repos\UserRegistrationProblemsTest\UserRegistrationProblemsTest\bin\Debug\net5.0\UserRegistrationProblemsTest.exe
+C:\Users\Rakesh\source\repos\UserRegistrationProblemsTest\UserRegistrationProblemsTest\bin\Debug\net5.0\UserRegistrationProblemsTest.deps.json
+C:\Users\Rakesh\source\repos\UserRegistrationProblemsTest\UserRegistrationProblemsTest\bin\Debug\net5.0\UserRegistrationProblemsTest.runtimeconfig.json
+C:\Users\Rakesh\source\repos\UserRegistrationProblemsTest\UserRegistrationProblemsTest\bin\Debug\net5.0\UserRegistrationProblemsTest.runtimeconfig.dev.json
+C:\Users\Rakesh\source\repos\UserRegistrationProblemsTest\UserRegistrationProblemsTest\bin\Debug\net5.0\UserRegistrationProblemsTest.dll
+C:\Users\Rakesh\source\repos\UserRegistrationProblemsTest\UserRegistrationProblemsTest\bin\Debug\net5.0\ref\UserRegistrationProblemsTest.dll
+C:\Users\Rakesh\source\repos\UserRegistrationProblemsTest\UserRegistrationProblemsTest\bin\Debug\net5.0\UserRegistrationProblemsTest.pdb
+C:\Users\Rakesh\source\repos\UserRegistrationProblemsTest\UserRegistrationProblemsTest\obj\Debug\net5.0\UserRegistrationProblemsTest.csproj.AssemblyReference.cache
+C:\Users\Rakesh\source\repos\UserRegistrationProblemsTest\UserRegistrationProblemsTest\obj\Debug\net5.0\UserRegistrationProblemsTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rakesh\source\repos\UserRegistrationProblemsTest\UserRegistrationProblemsTest\obj\Debug\net5.0\UserRegistrationProblemsTest.AssemblyInfoInputs.cache
+C:\Users\Rakesh\source\repos\UserRegistrationProblemsTest\UserRegistrationProblemsTest\obj\Debug\net5.0\UserRegistrationProblemsTest.AssemblyInfo.cs
+C:\Users\Rakesh\source\repos\UserRegistrationProblemsTest\UserRegistrationProblemsTest\obj\Debug\net5.0\UserRegistrationProblemsTest.csproj.CoreCompileInputs.cache
+C:\Users\Rakesh\source\repos\UserRegistrationProblemsTest\UserRegistrationProblemsTest\obj\Debug\net5.0\UserRegistrationProblemsTest.dll
+C:\Users\Rakesh\source\repos\UserRegistrationProblemsTest\UserRegistrationProblemsTest\obj\Debug\net5.0\ref\UserRegistrationProblemsTest.dll
+C:\Users\Rakesh\source\repos\UserRegistrationProblemsTest\UserRegistrationProblemsTest\obj\Debug\net5.0\UserRegistrationProblemsTest.pdb
+C:\Users\Rakesh\source\repos\UserRegistrationProblemsTest\UserRegistrationProblemsTest\obj\Debug\net5.0\UserRegistrationProblemsTest.genruntimeconfig.cache
