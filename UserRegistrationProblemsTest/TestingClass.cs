@@ -70,34 +70,38 @@ namespace UserRegistrationProblemsTest
         }
 
         //We are using this method to match pattern of mobile no
-        public static void mobileFormat(string number)
+        public static string mobileFormat(string number)
         {
             string Mobnumber = "^[0-9]{1,2}[ ]{1}[0-9]{10}$";  //Expression for Validating mobileFormating
             Regex regex = new Regex(Mobnumber);
 
             if (regex.IsMatch(number))
             {
-                Console.WriteLine(number + "-- > Valid");
+                //Console.WriteLine(number + "-- > Valid");
+                return "Valid";
             }
             else
             {
-                Console.WriteLine(number + "-- > InValid");
+                //Console.WriteLine(number + "-- > InValid");
+                return "Valid";
             }
 
         }
 
 
         //We are using this method to match pattern of password format
-        public static void passwordFormat(string pass)
+        public static string passwordFormat(string pass)
         {
             string pwd = "^[a-zA-Z0-9]{8,}$";
             Regex regex = new Regex(pwd);        //creating a regex named obj with regular pwd.
             if (regex.IsMatch(pass))
             {
-                Console.WriteLine(pass + "-- > Valid");
+                //Console.WriteLine(pass + "-- > Valid");
+                return "Valid";
             }
             else
-                Console.WriteLine(pass + "-- > InValid");
+                // Console.WriteLine(pass + "-- > InValid");
+                return "Valid";
         }
     }
 }
