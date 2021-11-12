@@ -150,5 +150,23 @@ namespace TestProject1
             Assert.AreEqual(expected, actual);
 
         }
+
+        [TestMethod]
+        public void TestAllGmailFormat()
+        {
+            //AAA Methodology
+
+            //Arrange
+            string message = "rakeshM111@";
+            string expected = "valid";
+
+            //Act
+            TestingClass testing = new TestingClass(message);
+            string actual = testing.validFirstName();
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+
+        }
     }
 }

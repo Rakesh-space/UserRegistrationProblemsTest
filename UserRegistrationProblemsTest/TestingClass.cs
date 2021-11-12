@@ -106,56 +106,31 @@ namespace UserRegistrationProblemsTest
             }
         }
 
-        //We are using this method to match pattern of Upper Case Password format
-        public static string UpperCaseFormat(string pass)
-        {
-            string pwd = "^(?=.*[A-Z])[a-zA-Z0-9]{8,}$"; //creating a regex named obj with regular pwd.
-            Regex regex = new Regex(pwd);
-            if (regex.IsMatch(pass))
+        
+             //We are using this method to match differnt pattern of Email format
+            public static void EmailArr(string[] name)
             {
-                //Console.WriteLine(pass + "-- > Valid");
-                return "Valid";
-            }
-            else
-            {
-                //Console.WriteLine(pass + "-- > InValid");
-                return "Invalid";
-            }
-        }
+                string email = "^[a-zA-Z0-9]+[+-._]{0,1}[a-zA-Z0-9]*[+-._]?[a-zA-Z0-9]*[@][a-zA-Z0-9]+[.][a-zA-Z0-9]{2,3}([.]?[a-zA-Z]{2,3}){0,1}$";
+                //+ means one or more.
+                //*- zero or more.
+                //?- zero or 1 
 
-        //We are using this method to match pattern of One Numeric Password format
-        public static string OneNumeric(string pass)
-        {
-            string pwd = "^(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]{8,}$";  //Expression for Validating One Numeric Password format
-            Regex regex = new Regex(pwd);
-            if (regex.IsMatch(pass))
-            {
-                //Console.WriteLine(pass + "-- > Valid");
-                return "Valid";
-            }
-            else
-            {
-                //Console.WriteLine(pass + "-- > InValid");
-                return "Invalid";
-            }
-        }
+                Regex regex = new Regex(email);      //Expression for Validating regular exp email different format.
+                foreach (var word in name)
+                {
+                    if (regex.IsMatch(word))
+                    {
+                         Console.WriteLine(word + " is valid.");
+                         //return "Valid";
+                    }
+                    else
+                    {
+                        Console.WriteLine(word + " is invalid.");
+                       //  return "Valid";
+                    }
+                }
 
-        //We are using this method to match pattern of Special Charcter Password format
-        public string SpecialCharcter(string pass)  
-        {
-            string pwd = "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^a-zA-Z0-9]).{10,}$"; //Expression for Validating Special Character Password format
-            Regex regex = new Regex(pwd);
-            if (regex.IsMatch(pass))
-            {
-                //Console.WriteLine(pass + "-- > Valid");
-                return "Valid";
             }
-            else
-            {                                                   
-                //Console.WriteLine(pass + "-- > InValid");
-                return "Invalid";
-            }
-        }
     }
 }
 
