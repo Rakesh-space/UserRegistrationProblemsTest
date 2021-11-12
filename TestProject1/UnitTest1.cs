@@ -133,13 +133,14 @@ namespace TestProject1
 
         }
 
+
         [TestMethod]
-        public void TestSpecialCharcter()
+        public void TestAllGmailFormat()
         {
             //AAA Methodology
 
             //Arrange
-            string message = "#r&K*9@oV5";
+            string message = "rakeshM111@";
             string expected = "valid";
 
             //Act
